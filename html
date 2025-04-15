@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari - Site Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-links">
+                <a href="#"><i class="fas fa-globe"></i> Global</a>
+                <a href="#"><i class="fas fa-user"></i> Minha Conta</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                    <img src="images/ferrari-logo.png" alt="Ferrari" width="120">
+                </a>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li><a href="#models">Modelos</a></li>
+                    <li><a href="#customization">Personalização</a></li>
+                    <li><a href="#racing">Competição</a></li>
+                    <li><a href="#experience">Experiência Ferrari</a></li>
+                    <li><a href="#museums">Museus</a></li>
+                    <li><a href="#store">Loja</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('images/hero-1.jpg')">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>SF90 Stradale</h1>
+                        <p>A primeira Ferrari híbrida plug-in de série</p>
+                        <div class="hero-cta">
+                            <a href="#" class="btn btn-primary">Descubra Mais</a>
+                            <a href="#" class="btn btn-secondary">Configurar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mais slides podem ser adicionados aqui -->
+        </div>
+        <div class="hero-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="section models-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Modelos</h2>
+            <div class="models-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="sports">Esportivos</button>
+                <button class="filter-btn" data-filter="gt">Gran Turismo</button>
+                <button class="filter-btn" data-filter="limited">Edições Limitadas</button>
+                <button class="filter-btn" data-filter="special">Série Speciale</button>
+            </div>
+            
+            <div class="models-grid">
+                <!-- Model 1 -->
+                <div class="model-card" data-category="sports">
+                    <div class="model-image">
+                        <img src="images/model-sf90.jpg" alt="SF90 Stradale">
+                        <div class="model-badge">Novo</div>
+                    </div>
+                    <div class="model-info">
+                        <h3>SF90 Stradale</h3>
+                        <div class="model-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>340 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>1000 cv</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-clock"></i>
+                                <span>2.5s 0-100</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Model 2 -->
+                <div class="model-card" data-category="gt">
+                    <div class="model-image">
+                        <img src="images/model-roma.jpg" alt="Ferrari Roma">
+                    </div>
+                    <div class="model-info">
+                        <h3>Roma</h3>
+                        <div class="model-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>320 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>620 cv</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-clock"></i>
+                                <span>3.4s 0-100</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Mais modelos podem ser adicionados aqui -->
+            </div>
+            
+            <div class="section-footer">
+                <a href="#" class="btn btn-primary">Ver Todos os Modelos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Section -->
+    <section id="racing" class="section racing-section">
+        <div class="container">
+            <h2 class="section-title">Competição</h2>
+            <div class="racing-content">
+                <div class="racing-text">
+                    <h3>Scuderia Ferrari</h3>
+                    <p>Com mais de 90 anos de história na Fórmula 1, a Scuderia Ferrari representa a paixão pela competição que define a marca.</p>
+                    <p>Nossas vitórias incluem 16 Campeonatos de Construtores e 15 Campeonatos de Pilotos.</p>
+                    <a href="#" class="btn btn-outline">Saiba Mais</a>
+                </div>
+                <div class="racing-image">
+                    <img src="images/ferrari-f1.jpg" alt="Scuderia Ferrari">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization Section -->
+    <section id="customization" class="section customization-section">
+        <div class="container">
+            <h2 class="section-title">Personalização</h2>
+            <div class="customization-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Escolha seu Modelo</h3>
+                    <p>Selecione entre nossa linha de veículos esportivos</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Personalize o Exterior</h3>
+                    <p>Cores, rodas, detalhes e muito mais</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Design do Interior</h3>
+                    <p>Materiais premium e acabamentos exclusivos</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Finalize seu Pedido</h3>
+                    <p>Seu Ferrari único está pronto para produção</p>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn btn-primary">Iniciar Configurador</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h4>Modelos</h4>
+                        <ul>
+                            <li><a href="#">SF90 Stradale</a></li>
+                            <li><a href="#">Roma</a></li>
+                            <li><a href="#">F8 Tributo</a></li>
+                            <li><a href="#">812 Superfast</a></li>
+                            <li><a href="#">Portofino M</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Competição</h4>
+                        <ul>
+                            <li><a href="#">Fórmula 1</a></li>
+                            <li><a href="#">Corrida GT</a></li>
+                            <li><a href="#">Ferrari Challenge</a></li>
+                            <li><a href="#">Esportes Amadores</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#">Sobre a Ferrari</a></li>
+                            <li><a href="#">História</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Sustentabilidade</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Privacidade</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">Recall</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="#">Concessionárias</a></li>
+                            <li><a href="#">Test Drive</a></li>
+                            <li><a href="#">Assistência</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                    <div class="copyright">
+                        <p>&copy; 2023 Ferrari S.p.A. - Todos os direitos reservados</p>
+                    </div>
+                    
+                    <div class="footer-logo">
+                        <img src="images/ferrari-logo-white.png" alt="Ferrari" width="80">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
